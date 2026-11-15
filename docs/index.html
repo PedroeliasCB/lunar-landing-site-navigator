@@ -37,8 +37,8 @@
         <div id="siteList" class="site-list"></div>
         <details class="custom">
           <summary>Custom coordinates</summary>
-          <p class="note">Terrain is precomputed per site (decision D5). Add a custom site with:
-            <code>python -m backend.build_site_data --custom "name,lat,lon_e"</code>, then reload.</p>
+          <p class="note">Not in this version. Every site is precomputed offline (decision D5: browsers cannot call Horizons directly).
+            To add one, append it to <code>backend/sites.py</code> and run <code>python -m backend.build_site_data</code>. A live proxy for custom points is the next step.</p>
         </details>
       </div>
       <div class="glass panel">

@@ -71,3 +71,5 @@ legend{color:var(--t3);font-size:12px}
 #gantt{width:100%}
 .alert-text{color:var(--alert)}
 @media (max-width:900px){.plan-grid{grid-template-columns:1fr}.topbar{height:auto;flex-wrap:wrap;gap:8px;padding:8px}}
+
+.drawer[hidden],.view[hidden]{display:none !important}

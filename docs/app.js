@@ -256,7 +256,7 @@ function drawer(id, open) { const el = $(id); el.hidden = !open; if (open) el.qu
 async function init() {
   try { S.index = await getJSON("data/index.json"); S.validation = await getJSON("data/validation.json"); }
   catch (e) { $("#cards").innerHTML = `<p class="alert-text">&#9650; Data not found. Run <code>python -m backend.build_site_data</code> first.</p>`; return; }
-  S.scenarios = [{ id: "malapert", slip: 0 }, { id: "connecting_ridge", slip: 0 }, { id: "mons_mouton", slip: 0 }];
+  S.scenarios = [{ id: "malapert", slip: 0 }, { id: "malapert_summit", slip: 0 }, { id: "connecting_ridge", slip: 0 }];
   loadURL(); writeSettings();
   const first = await site(S.scenarios[0].id); $("#time").max = nWin(first) - 1; $("#time").value = S.k;
   document.querySelectorAll(".tabs button").forEach((b) => (b.onclick = () => setView(b.dataset.view)));
