@@ -1,0 +1,7 @@
+.env
+nasa_apis_config.csv
+data/raw/
+__pycache__/
+*.pyc
+node_modules/
+.venv/
