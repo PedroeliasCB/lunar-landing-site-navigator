@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lunar Landing Site Navigator</title>
+<meta name="description" content="Compare lunar landing sites and dates by Sun and Earth visibility over the real LOLA terrain horizon.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305070B'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='white' stroke-width='2'/%3E%3Cpath d='M4 19h24' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar glass" role="banner">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="#fff" stroke-width="2"/><path d="M4 19h24" stroke="#fff" stroke-width="2"/></svg>
+    <span class="wordmark">Lunar Landing Site Navigator</span>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <button data-view="plan">Plan</button>
+    <button data-view="compare" aria-current="page">Compare</button>
+    <button data-view="timeline">Timeline</button>
+  </nav>
+  <div class="topright">
+    <span class="mono" id="clock" aria-live="polite"></span>
+    <label class="switch"><input type="checkbox" id="learn"> <span>Learn</span></label>
+    <button id="evidenceBtn" class="ghost" aria-controls="evidence">Evidence</button>
+  </div>
+</header>
+
+<main>
+  <section id="view-plan" class="view" hidden>
+    <div class="plan-grid">
+      <div class="glass panel">
+        <h2>Curated sites</h2>
+        <input id="siteFilter" type="search" placeholder="Search sites" aria-label="Search sites">
+        <div id="siteList" class="site-list"></div>
+        <details class="custom">
+          <summary>Custom coordinates</summary>
+          <p class="note">Terrain is precomputed per site (decision D5). Add a custom site with:
+            <code>python -m backend.build_site_data --custom "name,lat,lon_e"</code>, then reload.</p>
+        </details>
+      </div>
+      <div class="glass panel">
+        <h2>Scenarios <span class="muted">(up to 4)</span></h2>
+        <div id="tray"></div>
+        <h3>Presets</h3>
+        <div id="presets" class="presets"></div>
+        <button id="goCompare" class="primary">Compare</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="view-compare" class="view">
+    <div class="compare-head">
+      <p class="lead" id="question">Can I get power and talk to Earth here, on this date?</p>
+      <button class="adjust" id="adjustBtn" aria-controls="adjust">Adjust <span id="adjustCount"></span></button>
+    </div>
+    <div id="cards" class="cards"></div>
+  </section>
+
+  <section id="view-timeline" class="view" hidden>
+    <div class="glass panel">
+      <h2>When is each site lit and in contact?</h2>
+      <div class="legend"><span class="sw sun"></span>Sun up <span class="sw earth"></span>Earth up <span class="sw alert"></span>Blackout (no Sun, no Earth)</div>
+      <canvas id="gantt" height="300" aria-label="Timeline of Sun and Earth visibility per scenario"></canvas>
+      <div id="ganttHover" class="note mono" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <div class="scrubber glass" role="group" aria-label="Time">
+    <button id="play" class="ghost" aria-label="Play">Play</button>
+    <input id="time" type="range" min="0" max="4319" value="0" aria-label="Time in window">
+    <span id="timeLabel" class="mono"></span>
+  </div>
+</main>
+
+<aside id="adjust" class="drawer glass" hidden aria-label="Compare settings">
+  <h2>Adjust</h2>
+  <label>Mast height <select id="mast"><option>0</option><option selected>2</option><option>5</option><option>10</option></select> m</label>
+  <label>Disc convention <select id="conv"><option value="centre" selected>Centre of disc (headline)</option><option value="any">Any part of disc</option></select></label>
+  <label>Earth link threshold above skyline <input id="thr" type="range" min="0" max="10" step="0.5" value="0"> <span id="thrVal" class="mono">0.0 deg</span></label>
+  <fieldset><legend>Verdict thresholds (planner choice, not NASA criteria)</legend>
+    <label>GO: sunlight at least <input id="goSun" type="number" value="60" min="0" max="100"> %</label>
+    <label>GO: longest night at most <input id="goNight" type="number" value="100" min="0"> h</label>
+    <label>GO: Earth in view at least <input id="goEarth" type="number" value="50" min="0" max="100"> %</label>
+    <p class="note">MARGINAL when every value is within half of the GO limit again; otherwise NO-GO.</p>
+  </fieldset>
+  <button id="reset" class="ghost">Reset to defaults</button>
+  <button id="closeAdjust" class="ghost">Close</button>
+</aside>
+
+<aside id="evidence" class="drawer glass wide" hidden aria-label="Evidence">
+  <h2>Evidence</h2>
+  <div id="evidenceBody"></div>
+  <button id="closeEvidence" class="ghost">Close</button>
+</aside>
+
+<script src="app.js"></script>
+</body>
+</html>

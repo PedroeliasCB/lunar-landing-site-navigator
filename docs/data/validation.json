@@ -1,0 +1,110 @@
+[
+ {
+  "site": "Malapert Massif",
+  "metric": "Max Sun elevation above the flat horizon in window (deg)",
+  "ours": 2.909,
+  "reference": 5.54,
+  "reference_source": "E21 smooth-sphere bound 90-|lat|+1.5424 (WORKED_NUMBERS 3)",
+  "difference": -2.63,
+  "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
+ },
+ {
+  "site": "Haworth",
+  "metric": "Max Sun elevation above the flat horizon in window (deg)",
+  "ours": 2.308,
+  "reference": 4.94,
+  "reference_source": "E21 smooth-sphere bound 90-|lat|+1.5424 (WORKED_NUMBERS 3)",
+  "difference": -2.63,
+  "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
+ },
+ {
+  "site": "Nobile Rim 1",
+  "metric": "Max Sun elevation above the flat horizon in window (deg)",
+  "ours": 3.849,
+  "reference": 6.34,
+  "reference_source": "E21 smooth-sphere bound 90-|lat|+1.5424 (WORKED_NUMBERS 3)",
+  "difference": -2.49,
+  "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
+ },
+ {
+  "site": "de Gerlache Rim 2",
+  "metric": "Max Sun elevation above the flat horizon in window (deg)",
+  "ours": 1.113,
+  "reference": 3.24,
+  "reference_source": "E21 smooth-sphere bound 90-|lat|+1.5424 (WORKED_NUMBERS 3)",
+  "difference": -2.13,
+  "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
+ },
+ {
+  "site": "Mons Mouton (IM-2 intended)",
+  "metric": "Max Sun elevation above the flat horizon in window (deg)",
+  "ours": 4.21,
+  "reference": 6.76,
+  "reference_source": "E21 smooth-sphere bound 90-|lat|+1.5424 (WORKED_NUMBERS 3)",
+  "difference": -2.55,
+  "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
+ },
+ {
+  "site": "Connecting Ridge",
+  "metric": "Max Sun elevation above the flat horizon in window (deg)",
+  "ours": -0.181,
+  "reference": 2.01,
+  "reference_source": "E21 smooth-sphere bound 90-|lat|+1.5424 (WORKED_NUMBERS 3)",
+  "difference": -2.19,
+  "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
+ },
+ {
+  "site": "Peak Near Shackleton",
+  "metric": "Max Sun elevation above the flat horizon in window (deg)",
+  "ours": 0.199,
+  "reference": 2.53,
+  "reference_source": "E21 smooth-sphere bound 90-|lat|+1.5424 (WORKED_NUMBERS 3)",
+  "difference": -2.33,
+  "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
+ },
+ {
+  "site": "Apollo 11 (Tranquility Base)",
+  "metric": "Earth in view (%)",
+  "ours": 100.0,
+  "reference": 100.0,
+  "reference_source": "VALIDATION_TARGETS: near-side site always sees Earth",
+  "difference": 0.0,
+  "comment": "pass if 100"
+ },
+ {
+  "site": "IM-1 Odysseus (Malapert A)",
+  "metric": "Max Sun elevation above the flat horizon in window (deg)",
+  "ours": 8.789,
+  "reference": 11.41,
+  "reference_source": "E21 smooth-sphere bound 90-|lat|+1.5424 (WORKED_NUMBERS 3)",
+  "difference": -2.62,
+  "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
+ },
+ {
+  "site": "Malapert Massif",
+  "metric": "Terrain height (m)",
+  "ours": 4690.3,
+  "reference": 4689.63,
+  "reference_source": "LROC QuickMap Inspect TerrainHeight (2 m/px)",
+  "difference": 0.67,
+  "comment": "P3, < 1 m"
+ },
+ {
+  "site": "Test site 86 S 357.5 E",
+  "metric": "Horizons table parse (rows, az/el)",
+  "ours": "25/25 identical",
+  "reference": "raw Horizons text",
+  "reference_source": "P2 smoke test",
+  "difference": 0,
+  "comment": "pass"
+ },
+ {
+  "site": "Polar sites",
+  "metric": "Sun / Earth visibility vs PGDA 69 long-term maps",
+  "ours": "GAP",
+  "reference": "PGDA 69 AVGVISIB",
+  "reference_source": "Mazarico et al. 2011",
+  "difference": null,
+  "comment": "not compared yet: PGDA 69 is an 18.6-year average, our window is 30 days"
+ }
+]

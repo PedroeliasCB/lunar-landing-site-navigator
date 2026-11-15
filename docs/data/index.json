@@ -1,0 +1,189 @@
+{
+ "generated_utc": "2026-11-15T15:55Z",
+ "pipeline_version": "1.0.0",
+ "series_start_utc": "2027-03-01T00:00Z",
+ "series_days": 60,
+ "step_min": 10,
+ "sites": [
+  {
+   "id": "malapert",
+   "name": "Malapert Massif",
+   "group": "artemis_region",
+   "lat": -86.0,
+   "lon_e": -3.4,
+   "status": "TEAM",
+   "source": "Team prototype max-illumination point",
+   "terrain_source": "LDEM_85S_20M",
+   "h_site_m": 4690.3,
+   "metrics": {
+    "sunlight_pct": 31.57,
+    "longest_night_h": 373.5,
+    "earth_pct": 0.0,
+    "longest_no_earth_h": 720.0,
+    "both_pct": 0.0,
+    "blackout_longest_h": 373.5,
+    "max_sun_el_deg": 2.909
+   }
+  },
+  {
+   "id": "haworth",
+   "name": "Haworth",
+   "group": "artemis_region",
+   "lat": -86.6,
+   "lon_e": -4.3,
+   "status": "TEAM",
+   "source": "Team prototype max-illumination point",
+   "terrain_source": "LDEM_85S_20M",
+   "h_site_m": 1328.0,
+   "metrics": {
+    "sunlight_pct": 0.0,
+    "longest_night_h": 720.0,
+    "earth_pct": 0.0,
+    "longest_no_earth_h": 720.0,
+    "both_pct": 0.0,
+    "blackout_longest_h": 720.0,
+    "max_sun_el_deg": 2.308
+   }
+  },
+  {
+   "id": "nobile_rim_1",
+   "name": "Nobile Rim 1",
+   "group": "artemis_region",
+   "lat": -85.2,
+   "lon_e": 52.0,
+   "status": "TEAM",
+   "source": "Team prototype max-illumination point",
+   "terrain_source": "LDEM_85S_20M",
+   "h_site_m": 1158.0,
+   "metrics": {
+    "sunlight_pct": 30.37,
+    "longest_night_h": 295.67,
+    "earth_pct": 16.27,
+    "longest_no_earth_h": 369.33,
+    "both_pct": 16.27,
+    "blackout_longest_h": 295.67,
+    "max_sun_el_deg": 3.849
+   }
+  },
+  {
+   "id": "de_gerlache_rim_2",
+   "name": "de Gerlache Rim 2",
+   "group": "artemis_region",
+   "lat": -88.3,
+   "lon_e": -106.8,
+   "status": "TEAM",
+   "source": "Team prototype max-illumination point",
+   "terrain_source": "LDEM_85S_20M",
+   "h_site_m": 189.2,
+   "metrics": {
+    "sunlight_pct": 0.0,
+    "longest_night_h": 720.0,
+    "earth_pct": 39.54,
+    "longest_no_earth_h": 297.0,
+    "both_pct": 0.0,
+    "blackout_longest_h": 297.0,
+    "max_sun_el_deg": 1.113
+   }
+  },
+  {
+   "id": "mons_mouton",
+   "name": "Mons Mouton (IM-2 intended)",
+   "group": "artemis_region",
+   "lat": -84.78,
+   "lon_e": 29.13,
+   "status": "OFFICIAL",
+   "source": "LROC post 1401",
+   "terrain_source": "LDEM_85S_20M",
+   "h_site_m": 5312.2,
+   "metrics": {
+    "sunlight_pct": 36.81,
+    "longest_night_h": 328.83,
+    "earth_pct": 81.53,
+    "longest_no_earth_h": 121.83,
+    "both_pct": 29.31,
+    "blackout_longest_h": 67.83,
+    "max_sun_el_deg": 4.21
+   }
+  },
+  {
+   "id": "connecting_ridge",
+   "name": "Connecting Ridge",
+   "group": "artemis_2022",
+   "lat": -89.53432,
+   "lon_e": -150.05233,
+   "status": "OFFICIAL",
+   "source": "LPSC 2024 abstract 1695",
+   "terrain_source": "LDEM_85S_20M",
+   "h_site_m": 1652.5,
+   "metrics": {
+    "sunlight_pct": 41.9,
+    "longest_night_h": 328.83,
+    "earth_pct": 42.59,
+    "longest_no_earth_h": 278.0,
+    "both_pct": 32.22,
+    "blackout_longest_h": 278.0,
+    "max_sun_el_deg": -0.181
+   }
+  },
+  {
+   "id": "peak_near_shackleton",
+   "name": "Peak Near Shackleton",
+   "group": "artemis_2022",
+   "lat": -89.01701,
+   "lon_e": 126.27302,
+   "status": "OFFICIAL",
+   "source": "LPSC 2024 abstract 1695",
+   "terrain_source": "LDEM_85S_20M",
+   "h_site_m": 1166.2,
+   "metrics": {
+    "sunlight_pct": 3.01,
+    "longest_night_h": 604.33,
+    "earth_pct": 39.98,
+    "longest_no_earth_h": 289.5,
+    "both_pct": 0.0,
+    "blackout_longest_h": 289.5,
+    "max_sun_el_deg": 0.199
+   }
+  },
+  {
+   "id": "apollo_11",
+   "name": "Apollo 11 (Tranquility Base)",
+   "group": "apollo",
+   "lat": 0.67416,
+   "lon_e": 23.47314,
+   "status": "OFFICIAL",
+   "source": "NSSDC lunar_sites (Wagner et al. 2017); LROC featured site 51",
+   "terrain_source": "smooth_sphere",
+   "h_site_m": null,
+   "metrics": {
+    "sunlight_pct": 49.38,
+    "longest_night_h": 299.0,
+    "earth_pct": 100.0,
+    "longest_no_earth_h": 0.0,
+    "both_pct": 49.38,
+    "blackout_longest_h": 0.0,
+    "max_sun_el_deg": 89.647
+   }
+  },
+  {
+   "id": "im1_odysseus",
+   "name": "IM-1 Odysseus (Malapert A)",
+   "group": "clps_flown",
+   "lat": -80.13,
+   "lon_e": 1.44,
+   "status": "OFFICIAL",
+   "source": "LEAG 2024 abstract 5037",
+   "terrain_source": "LDEM_80S_80M",
+   "h_site_m": 2593.4,
+   "metrics": {
+    "sunlight_pct": 36.34,
+    "longest_night_h": 406.33,
+    "earth_pct": 100.0,
+    "longest_no_earth_h": 0.0,
+    "both_pct": 36.34,
+    "blackout_longest_h": 0.0,
+    "max_sun_el_deg": 8.789
+   }
+  }
+ ]
+}
