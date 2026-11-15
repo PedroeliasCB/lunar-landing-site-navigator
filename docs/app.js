@@ -12,6 +12,7 @@ const GROUPS = { artemis_region: "Artemis candidate regions", artemis_2022: "Art
   clps_flown: "CLPS flown", apollo: "Apollo", other_agency: "Other agencies", custom: "Custom" };
 const PRESETS = [
   { name: "Artemis regions tour", sc: [["malapert", 0], ["haworth", 0], ["nobile_rim_1", 0], ["de_gerlache_rim_2", 0]] },
+  { name: "Move 2.5 km: Malapert slope vs summit", sc: [["malapert", 0], ["malapert_summit", 0]] },
   { name: "Slip a landing by 14 days", sc: [["malapert", 0], ["malapert", 14]] },
   { name: "Apollo 11 vs south pole ridge", sc: [["apollo_11", 0], ["connecting_ridge", 0]] },
 ];

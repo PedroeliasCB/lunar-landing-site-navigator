@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-15T15:55Z",
+ "generated_utc": "2026-11-15T15:57Z",
  "pipeline_version": "1.0.0",
  "series_start_utc": "2027-03-01T00:00Z",
  "series_days": 60,
@@ -23,6 +23,26 @@
     "both_pct": 0.0,
     "blackout_longest_h": 373.5,
     "max_sun_el_deg": 2.909
+   }
+  },
+  {
+   "id": "malapert_summit",
+   "name": "Malapert summit (LOLA high point)",
+   "group": "artemis_region",
+   "lat": -85.96271,
+   "lon_e": -2.37251,
+   "status": "TEAM",
+   "source": "Highest LDEM_85S_20M pixel within 8 km of the Malapert TEAM point (4993.5 m), computed by our pipeline",
+   "terrain_source": "LDEM_85S_20M",
+   "h_site_m": 4993.5,
+   "metrics": {
+    "sunlight_pct": 64.86,
+    "longest_night_h": 242.83,
+    "earth_pct": 100.0,
+    "longest_no_earth_h": 0.0,
+    "both_pct": 64.86,
+    "blackout_longest_h": 0.0,
+    "max_sun_el_deg": 2.949
    }
   },
   {

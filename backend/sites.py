@@ -9,6 +9,8 @@ South polar sites use LOLA terrain; Apollo 11 (near side) uses the smooth-sphere
 SITES = [
     {"id": "malapert", "name": "Malapert Massif", "lat_deg": -86.0, "lon_e_deg": 356.6,
      "status": "TEAM", "source": "Team prototype max-illumination point", "group": "artemis_region"},
+    {"id": "malapert_summit", "name": "Malapert summit (LOLA high point)", "lat_deg": -85.96271, "lon_e_deg": 357.62749,
+     "status": "TEAM", "source": "Highest LDEM_85S_20M pixel within 8 km of the Malapert TEAM point (4993.5 m), computed by our pipeline", "group": "artemis_region"},
     {"id": "haworth", "name": "Haworth", "lat_deg": -86.6, "lon_e_deg": 355.7,
      "status": "TEAM", "source": "Team prototype max-illumination point", "group": "artemis_region"},
     {"id": "nobile_rim_1", "name": "Nobile Rim 1", "lat_deg": -85.2, "lon_e_deg": 52.0,

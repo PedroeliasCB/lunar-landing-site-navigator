@@ -9,6 +9,15 @@
   "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
  },
  {
+  "site": "Malapert summit (LOLA high point)",
+  "metric": "Max Sun elevation above the flat horizon in window (deg)",
+  "ours": 2.949,
+  "reference": 5.58,
+  "reference_source": "E21 smooth-sphere bound 90-|lat|+1.5424 (WORKED_NUMBERS 3)",
+  "difference": -2.63,
+  "comment": "must not exceed the bound; a 30-day window sits below the annual maximum"
+ },
+ {
   "site": "Haworth",
   "metric": "Max Sun elevation above the flat horizon in window (deg)",
   "ours": 2.308,
