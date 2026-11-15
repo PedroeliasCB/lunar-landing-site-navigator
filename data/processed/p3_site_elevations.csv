@@ -1,0 +1,9 @@
+id,name,lat_deg,lon_e_deg,status,source,lon_180_deg,height_m_ldem_80s_80m,height_m_ldem_85s_20m
+malapert,Malapert Massif,-86.0,356.6,TEAM,Team prototype max-illumination point,-3.4,4690.5,4690.3
+haworth,Haworth,-86.6,355.7,TEAM,Team prototype max-illumination point,-4.3,1326.4,1328.0
+nobile_rim_1,Nobile Rim 1,-85.2,52.0,TEAM,Team prototype max-illumination point,52.0,1159.3,1158.0
+de_gerlache_rim_2,de Gerlache Rim 2,-88.3,253.2,TEAM,Team prototype max-illumination point,-106.8,191.6,189.2
+mons_mouton,Mons Mouton (IM-2 intended),-84.78,29.13,OFFICIAL,LROC post 1401,29.13,5312.3,5312.2
+connecting_ridge,Connecting Ridge,-89.53432,209.94767,OFFICIAL,LPSC 2024 abstract 1695,-150.05233,1652.2,1652.5
+peak_near_shackleton,Peak Near Shackleton,-89.01701,126.27302,OFFICIAL,LPSC 2024 abstract 1695,126.27302,1167.0,1166.2
+im1_odysseus,IM-1 Odysseus (Malapert A),-80.13,1.44,OFFICIAL,LEAG 2024 abstract 5037,1.44,2593.4,nan
